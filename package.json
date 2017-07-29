@@ -1,0 +1,16 @@
+{
+  "name": "dynamodb_csv_fast_import",
+  "version": "1.0.3",
+  "description": "Batch import a large amount of data to the DynamoDB",
+  "main": "importCSV.js",
+  "scripts": {
+    "start": "node importCSV.js"
+  },
+  "author": "Stephen Tse <Stephen.Xie@sa.gov.au>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "aws-sdk": "^2.86.0",
+    "csv-parse": "^1.2.0"
+  }
+}
