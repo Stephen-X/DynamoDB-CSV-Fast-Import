@@ -44,7 +44,7 @@ const async = require('async');
 
 const AWS = require('aws-sdk');
 AWS.config.update({ region: 'ap-southeast-2' });
-const dynamo = new AWS.DynamoDB.DocumentClient();
+const dynamo = new AWS.DynamoDB.DocumentClient({ convertEmptyValues: true });
 
 // ** Set up variables here ********************************
 const csv_filename = 'devices.csv';
